@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: #efefef;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 500px;
+    box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.productBackground{
+    width: 50%;
+    height: 100%;
+}
+.productBackground .product{
+    width: 100%;
+    height: 500px;
+}
+.info{
+    width: 50%;
+    background-color: #fff;
+    padding: 35px 40px;
+    height: 500px;
+    box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1),  0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.productName div{
+    display: flex;
+    align-items: center;
+}
+.productName div .big{
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #333;
+    line-height: 1;
+}
+.productName div .new{
+    background-color: #2175f5;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.productName .small{
+    font-weight: 500px;
+    color: #444;
+    margin-top: 3px;
+    text-transform: capitalize;
+}
+.description{
+    padding: 10px 0;
+}
+.description .title{
+    color: #3a3a3a;
+    font-weight: 600px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.description .text{
+    color: #555;
+    font-size: 17px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.storage-container{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.storage-container .title{
+    color: #3a3a3a;
+    font-weight: 600px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.storages{
+    padding: 8x 0;
+    display: flex;
+    align-items: center;
+}
+.storages .storage {
+    width: 80px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #eee;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+  
+.storages .storage.active {
+    background-color: #2175f5;
+    color: #fff;
+}
+  
+.buy-price {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.buy-price .price {
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+  
+.buy-price .price h1 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    line-height: 1;
+}
+  
+.buy-price .price i {
+    font-size: 1.4rem;
+    margin-right: 1px;
+}
+  
+.buy {
+    padding: 0.7rem 1rem;
+    background-color: #2175f5;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+  
+.buy .fas {
+    margin-right: 2px;
+}
+  
+
+@media (min-width: 1440px) {
+    .container {
+      height: 100vh;
+    }
+  
+    .card {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+    }
+  
+    .card > div {
+      width: 100%;
+      box-shadow: none;
+    }
+  
+    .productBackground {
+      height: 90vh;
+    }
+  
+    .productBackground .product {
+      height: 100%;
+    }
+  
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 90vh;
+    }
+  
+    .description .text {
+      display: block;
+    }
+}
+  
+@media (max-width: 992px) {
+    .card {
+      width: 100%;
+      box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+    }
+}
+  
+@media (max-width: 892px) {
+    .card {
+      flex-direction: column;
+      width: 900px;
+      box-shadow: 0 0 35px 1px rgba(0, 0, 0, 0.2);
+    }
+  
+    .card > div {
+      width: 100%;
+      box-shadow: none;
+    }
+    
+}
+  
+@media (max-width: 490px) {
+    .productName div .big {
+      font-size: 1.3rem;
+    }
+  
+    .productName .small {
+      font-size: 1rem;
+    }
+  
+    .productName .new {
+      padding: 2px 6px;
+      font-size: 0.9rem;
+    }
+  
+    .description .title {
+      font-size: 0.9rem;
+    }
+  
+    .description .text {
+      font-size: 0.8rem;
+    }
+  
+    .buy {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  
+    .price h1 {
+      font-size: 1.5rem;
+    }
+  
+    .price i {
+      font-size: 0.9rem;
+    }
+  
+    .info {
+      padding: 20px;
+    }
+}
+  
+@media (max-width: 400px) {
+    .buy .fas {
+      display: none;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      margin-top: 5rem;
+    }
+}
+  
